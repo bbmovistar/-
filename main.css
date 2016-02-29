@@ -9,6 +9,9 @@
 	display: block;
 	clear: both;
 }
+a:hover{
+	color: #d4d4d4;
+}
 
 /*分割线样式*/
 hr{
@@ -96,7 +99,7 @@ button{
 	border:none;
 	border-radius: 7px;
 		
-	color: #eee;
+	color: #fff;
 	padding: 10px;
 	cursor: hand;
 
@@ -252,6 +255,34 @@ button{
 }
 .card:nth-child(6){
 	background-color: rgba(0,0,0,0.24);
+}
+/*purple-section样式结束*/
+		/*正文样式结束*/
+
+/*footer样式开始*/
+footer{
+	background-color: #3e3e3e;
+	color: #eee;
+	min-height: 200px;
+	text-align: center;
+}
+footer ul{
+	margin: 0 auto;
+	padding: 40px;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px 15px;
+}
+.share-group a:hover{
+	
+}
+.share-group li img{
+	width: 50px;
+	height: 50px;
+}
+.copy{
+	padding-bottom: 50px;
 }
 
 
