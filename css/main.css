@@ -1,0 +1,298 @@
+/*全局样式*/
+.sub-heading{
+	line-height: 50px;
+	margin: 30px;
+	letter-spacing: 1px;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+a:hover{
+	color: #d4d4d4;
+}
+
+/*分割线样式*/
+hr{
+	margin: 0;
+}
+.hr{
+	width: 60%;
+	height: 2px;
+	margin: 20px auto;
+
+}
+
+/*header样式开始*/
+	/*nav样式*/
+nav{
+
+	background: #3e3e3e;
+	height: 50px;
+}
+header a{
+	text-decoration: none;
+ 	/*将a链接设为行内块级元素，并且设置其高度，可以使链接周围均可点击*/
+	display: inline-block;
+	height: inherit;
+	color: #fff;
+}
+nav .logo{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 50px;
+	margin: 0 20px;
+}
+/*.logo{
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}*/
+
+nav ul{
+	list-style: none;
+	margin: 0px;
+	/*line-height: 50px;*/
+	float: right;
+}
+ nav ul li{
+ 	display: inline-block;
+ 	line-height: 50px;
+ 	float: right;
+ 	margin: 0 20px;
+ }
+
+ /*nav ul li a{
+ 	text-decoration: none;
+ 	/*将a链接设为行内块级元素，并且设置其高度，可以使链接周围均可点击*/
+	/*display: inline-block;
+	height: inherit;
+	color: #fff;
+ }*/
+
+/*banner样式*/
+#banner{
+	background: url(../img/banner.jpg);
+	height: 750px;
+}
+#banner .inner{
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 160px;
+}
+
+#banner .inner h1{
+	color: #4c4c4c;
+	margin: 10px 0px;
+}
+
+#banner .inner .hr{
+	margin: 0 auto;
+	background-color: #fff;
+}
+button{
+	border:none;
+	border-radius: 7px;
+		
+	color: #fff;
+	padding: 10px;
+	cursor: hand;
+
+}
+
+#banner button{
+	padding: 12px 25px;
+	background-color: #6e96b6;
+}
+
+#banner .inner .more{
+	color: #eee;
+	margin-top: 220px;
+}	
+.sub-heading{
+	line-height: 30px;
+	margin: 30px;
+}
+/*header样式结束*/
+
+/*正文样式开始*/
+	/*正文green-section样式*/
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.green-section{
+	background-color: #78b3ae;
+	text-align: center;
+	color: #fff;
+	padding: 100px 0px;
+}
+.green-section h2{
+	margin: 0 10px;
+}
+
+.green-section .hr{
+	background-color: #639490;
+}
+.green-section .icon-group .icon{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: #3dafaf;
+	transform: rotate(45deg);
+	margin: 30px 40px;
+}
+/*将icon文字用i标签包裹，设置i标签为行内块级元素，设置text-align和line-height使其水平垂直居中，再将i标签与父级块级元素反向选择*/
+.green-section .icon-group .icon i{
+	display: inline-block;
+	text-align: center;
+	line-height: 100px;
+	transform: rotate(-45deg);
+}
+/*green-section样式结束*/
+
+	/*正文gray-section样式开始*/
+.gray-section{
+	background-color: #3e3e3e;
+	color: #fff;
+}
+
+.gray-section .img-section{
+	width: 45%;
+}
+.gray-section .text-section{
+	width: 55%;
+}
+.img-section img{
+	width: 100%
+}
+/*页面中两个article之间出现缝隙，通过设置字体大小为0px，可以消除该缝隙*/
+.article-preview {
+	font-size: 0px;
+}
+.article-preview > div{
+	float: left;
+}
+/*.article-preview:after{
+	content: '';
+	display: block;
+	clear: both;
+}*/
+.article-preview:nth-child(odd){
+	background-color: rgba(255,255,255,0.05);
+}
+
+.text-section{
+	position: relative;
+	top: 68px;
+	left: 50px;
+}
+.text-section > *{
+	max-width: 80%;
+}
+.text-section h2{
+	font-size: 25px;
+}
+.text-section p{
+	font-size: 17px;
+	line-height: 30px;
+}
+/*gray-setion样式结束*/
+
+	/*正文purple-section样式开始*/
+
+.purple-section{
+	padding: 80px;
+	background-color: #6e96b6;
+	color: white;
+}
+
+.purple-section h2{
+	margin: 0;
+}
+.purple-section .heading-wrapper{
+	text-align: center;
+}
+.purple-section p{
+	font-size: 18px;
+}
+.purple-section .hr{
+	background-color: #5b7d97;
+}
+.card{
+	float: left;
+	width: 50%;
+	height: 300px;
+	min-height: 200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 50px;
+}
+.card p{
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.card:first-child{
+	background-color: rgba(0,0,0,0.04);
+}
+.card:nth-child(2){
+	background-color: rgba(0,0,0,0.08);
+}
+.card:nth-child(3){
+	background-color: rgba(0,0,0,0.12);
+}
+.card:nth-child(4){
+	background-color: rgba(0,0,0,0.16);
+}
+.card:nth-child(5){
+	background-color: rgba(0,0,0,0.20);
+}
+.card:nth-child(6){
+	background-color: rgba(0,0,0,0.24);
+}
+/*purple-section样式结束*/
+		/*正文样式结束*/
+
+/*footer样式开始*/
+footer{
+	background-color: #3e3e3e;
+	color: #eee;
+	min-height: 200px;
+	text-align: center;
+}
+footer ul{
+	margin: 0 auto;
+	padding: 40px;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px 15px;
+}
+.share-group a:hover{
+	
+}
+.share-group li img{
+	width: 50px;
+	height: 50px;
+}
+.copy{
+	padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
